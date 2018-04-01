@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.devit.quizapp.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ImageViewHeight"
+                android:scaleType="fitStart"
+                android:src="@drawable/quizbackground" />
+
+            <EditText
+                android:id="@+id/EditTextNameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/MarginBottomAgeEditText"
+                android:layout_marginTop="@dimen/MarginTopNameEditText"
+                android:hint="@string/EditTextHint"
+
+                android:inputType="textCapWords|textAutoCorrect"
+                android:padding="@dimen/Padding"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+            <EditText
+                android:id="@+id/EditTextAgeID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/MarginBottomAgeEditText"
+                android:hint="@string/AgeHint"
+                android:inputType="number"
+                android:padding="@dimen/Padding"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/colorAccent"
+
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/StartBTNMarginTop"
+                android:onClick="startBTN"
+                android:text="@string/StartBTN"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/TextSize" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

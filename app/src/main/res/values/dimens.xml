@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Activity Dimensions -->
+    <dimen name="StartBTNMarginTop" >15dp</dimen>
+    <dimen name="TextSize">20sp</dimen>
+    <dimen name="Padding">10dp</dimen>
+    <dimen name="MarginTopNameEditText">25dp</dimen>
+    <dimen name="MarginBottomAgeEditText" > 10dp </dimen>
+   <!-- Question Dimensions -->
+    <dimen name="ImageViewHeight">250dp</dimen>
+    <dimen name="QuestionTextSize">15sp</dimen>
+    <dimen name="Btn2marginend">62dp</dimen>
+    <dimen name="BackBtn1marginLeft">49dp</dimen>
+    <dimen name="Btn2marginBottom">100dp</dimen>
+
+
+
+</resources>

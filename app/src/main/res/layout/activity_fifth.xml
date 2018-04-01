@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.devit.quizapp.Fifth">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/ScoreID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/MarginTopNameEditText"
+            android:layout_marginLeft="@dimen/Padding"
+            android:layout_marginTop="@dimen/Padding"
+            android:text="@string/ScorText"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/TextSize" />
+
+        <TextView
+            android:id="@+id/UpdatedScoreID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/MarginTopNameEditText"
+            android:layout_marginTop="@dimen/Padding"
+            android:layout_toRightOf="@id/ScoreSlashID"
+
+            android:text="@string/ScoreFive"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/Grey"
+            android:textSize="@dimen/TextSize" />
+
+        <TextView
+            android:id="@+id/ScoreSlashID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/MarginTopNameEditText"
+            android:layout_marginTop="@dimen/Padding"
+            android:layout_toRightOf="@id/ScoreViewID"
+            android:text="@string/ScoreSlash"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/Grey"
+            android:textSize="@dimen/TextSize" />
+
+        <TextView
+            android:id="@+id/ScoreViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/MarginTopNameEditText"
+            android:layout_marginLeft="@dimen/StartBTNMarginTop"
+            android:layout_marginTop="@dimen/Padding"
+            android:layout_toRightOf="@id/ScoreID"
+            android:text="0 "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/TextSize" />
+
+
+        <TextView
+
+            android:id="@+id/Question_One"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ScoreID"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/Padding"
+            android:layout_marginTop="@dimen/Padding"
+            android:padding="@dimen/Padding"
+            android:text="@string/QuestionFive"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/QuestionTextSize"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup2_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_One"
+            android:layout_marginLeft="@dimen/Padding">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/Padding"
+                android:layout_marginTop="@dimen/Padding"
+                android:paddingLeft="@dimen/Padding"
+                android:paddingRight="@dimen/Padding"
+                android:text="@string/AnswerQuestionFiveA"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/TextSize" />
+
+            <RadioButton
+                android:id="@+id/CorrectAnswerFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/Padding"
+                android:paddingLeft="@dimen/Padding"
+                android:paddingRight="@dimen/Padding"
+                android:text="@string/AnswerQuestionFiveB"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/TextSize" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/Padding"
+                android:paddingLeft="@dimen/Padding"
+                android:paddingRight="@dimen/Padding"
+                android:text="@string/AnswerQuestionFiveC"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/TextSize" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button2"
+            android:onClick="submitBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/Btn2marginBottom"
+            android:layout_marginEnd="@dimen/BackBtn1marginLeft"
+            android:layout_marginRight="@dimen/BackBtn1marginLeft"
+            android:shadowColor="@color/colorAccent"
+            android:text="@string/SubmitButton"
+
+            android:textAllCaps="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            android:textColorHighlight="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignLeft="@+id/RadioGroup2_ID"
+            android:layout_alignStart="@+id/RadioGroup2_ID"
+            android:layout_marginLeft="@dimen/BackBtn1marginLeft"
+            android:layout_marginStart="@dimen/BackBtn1marginLeft"
+            android:onClick="backBtn5"
+            android:text="@string/BackBtn"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            android:textColorHighlight="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
